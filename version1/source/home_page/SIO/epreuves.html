@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page BTS SIO</title>
+    <link href="ressources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <link href="ressources/css/modern-business.css" rel="stylesheet">
+    <link href="ressources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+
+      <!--##################################
+          MENU
+    ##################################-->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="..\bts.html">BTS Monge</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Présentation</a></li>
+                    <li><a href="materiel.html">Matériel</a></li>
+                    <li><a href="epreuves.html">Epreuves</a></li>
+                    <li><a href="exemples_cours.html">Synthèse Contexte</a></li>
+					<li><a target="_blank" href="docs/réferenciel.pdf">Référentiel du BTS SIO</a></li>
+                    <li><a href="interesse.html" style="color:red;border:1px red solid;font-size:18px;">Je suis intéressé</a></li>
+                    <!--<li><a href="index.html"><img title="french" src="image/fr.png" /></a></li>            
+                    <li><a href="vues_en/index_en.php"><img title="english" src="image/gb.png" /></a></li>
+                    <li><a target="_blank" href="http://www.lyceemonge.com"><img title="Site du lycée Monge" id="monge" src="image/monge.png"/></a></li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<!--##################################
+          SLIDER OPTIONNEL
+    ##################################-->
+
+    <div id="myCarousel" class="carousel slide">
+
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('image/think.png');"></div>
+                <div class="carousel-caption">
+                  
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('image/diff.png');"></div>
+                <div class="carousel-caption">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('image/bts.png');"></div>
+                <div class="carousel-caption">
+                    <h1></h1>
+                </div>
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </div>
+
+
+
+    <!--##################################
+          DEBUT BODY
+    ##################################-->
+
+	  <div class="section">
+		  <div class="container"><h1 align="center">Epreuves</h1></div>
+		</div>
+    
+    <div class="section-colored">
+	    <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <h2>Tableau examen</h2>
+					  <p>Ci-contre vous trouverez la grille regroupant les coefficents des différentes épreuves.</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+					  <table class="table table-bordered table-hover" id="tabexam" cellpadding="5">
+  						<tr align="center">
+  							<td><strong>Epreuves</strong></td>
+  							<td>Coeff</td>
+  							<td>Durée</td>
+  							<td>Forme</td>
+  						</tr>
+  						<tr align="center">
+  							<td colspan="4"><strong>Epreuves obligatoires</strong></td>
+  						</tr>
+  						<tbody>
+  						<tr align="center">
+  							<td>Culture générale et expression</td>
+  							<td>2</td>
+  							<td>4 H</td>
+  							<td>Ecrit</td>
+  						</tr>
+  						<tr align="center">
+  							<td>Expression et communication en langue anglaise</td>
+  							<td>2</td>
+  							<td>2 H</td>
+  							<td>Ecrit + 20 min oral</td>
+  						</tr>
+  						<tr align="center">
+  							<td>Mathématiques</td>
+  							<td>2</td>
+  							<td>2 H</td>
+  							<td>Ecrit</td>
+  						</tr>
+  						<tr align="center">
+  							<td>Algorithmique appliquée</td>
+  							<td>1</td>
+  							<td>20 min</td>
+  							<td>Oral</td>
+  						</tr>
+  						<tr align="center">
+  							<td>Analyse économique, managériale et juridique des services informatiques</td>
+  							<td>3</td>
+  							<td>4 H</td>
+  							<td>Ecrit</td>
+  						</tr>
+  						<tr align="center">
+  							<td>Conception et maintenance de solutions informatiques</td>
+  							<td>4</td>
+  							<td>40 min</td>
+  							<td>Pratique et oral</td>
+  						</tr>
+  						<tr align="center">
+  							<td>Production et fourniture de services informatiques</td>
+  							<td>5</td>
+  							<td>4 H</td>
+  							<td>Ecrit</td>
+  						</tr>
+  						<tr align="center">
+  							<td>Parcours de professionnalisation</td>
+  							<td>3</td>
+  							<td>40 min</td>
+  							<td>Oral</td>
+  						</tr>
+  						</tbody>
+  						<tr align="center">
+  							<td colspan="4"><strong>Epreuves Facultatives</strong></td>
+  						</tr>
+  						<tbody>
+  						<tr align="center">
+  							<td>Langue vivante étrangère 2</td>
+  							<td>1</td>
+  							<td>20 min</td>
+  							<td>Oral</td>
+  						</tr>
+  						<tr align="center">
+  							<td>Mathématiques approfondies</td>
+  							<td>1</td>
+  							<td>2 H</td>
+  							<td>Ecrit</td>
+  						</tr>
+  						</tbody>
+					  </table>
+					</div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.section-colored -->
+
+    <div class="section">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <img class="img-responsive" src="image/stage.jpg">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <h2>Les Stages</h2>
+  						<p>La formation de BTS a pour but de former des professionnels pouvant s'insérer dans le monde du travail et le BTS Services Informatiques aux Organisations ne déroge pas à cette règle avec la présence
+  						de stages obligatoires.
+  						Les stages sont destinés à donner à l'étudiant une représentation concrète du milieu professionnel des services informatiques. Ils vont aussi lui permettent d'acquérir des compétences professionnelles
+  						ainsi que de l'expérience.</p>
+              <p>L'étudiant du BTS SIO doit réaliser obligatoirement 2 stages d'une durée de 10 semaines au cours des 2 années de formation. Il sera nécessaire de faire un stage d'une période de 5 semaines en fin 
+  						  de première année et d'une période de 5 semaines en deuxième année.</p> 
+              <p>Ces 2 stages seront sous le contrôle d'une convention de stage.</p><br/><br/>
+            </div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.section -->
+	
+    <div class="section-colored">
+	    <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <h2>Portefeuille de compétences</h2>
+						<p>Pour évaluer le degré d’appropriation de son parcours de professionnalisation et les compétences acquises par l'étudiant un portefeuille de compétences doit être réalisé. Ce portefeuille de compétences
+						est indispensable au déroulement de l’épreuve E6. 
+						Le portefeuille de compétences regroupe certaines notions sur divers domaines de l’informatique. Ce dernier, est complété lors des deux années de formation et de l’expérience acquise en stage.</p><br/>
+						<p><i>Ci contre le portefeuille de compétences actuel</i></p>
+					</div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <a target="_blank" href="docs/doc_portfolio.pdf"><img class="img-responsive" src="image/portfolio.png"></a>
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+    
+    <!--##################################
+          FIN BODY
+    ##################################-->
+    
+    <!--##################################
+          FOOTER
+    ##################################-->
+      
+      <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+	  <script src="../jquery.js"></script>
+      <script src="ressources/js/bootstrap.min.js"></script>
+      <script src="ressources/js/modern-business.js"></script>
+      <script src="ressources/js/script.js"></script>
+
+      <div id="footer">
+        <div class="container" align="center">
+          <div class="row">
+    
+            <ul class="col-lg-4 col-md-4 col-sm-4 footul">
+              
+            </ul>
+            
+            
+
+            <ul class="col-lg-4 col-md-4 col-sm-4 footul">
+              <li><h4>Lycée Polyvalent Gaspard Monge</h4></li>
+              <li>2 Avenue de Saint-Julien</li>
+              <li>Charleville-Mézières 08000</li>
+              <li>Tel : 03.24.52.69.69</li>
+            </ul>
+  
+
+          </div>
+        </div>
+      </div>
+	
+  </body>
+</html>
